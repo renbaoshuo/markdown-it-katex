@@ -22,7 +22,7 @@
   "author": "Yu Zhang @neilsustc",
   "license": "MIT",
   "dependencies": {
-    "katex": "^0.10.0-rc.1"
+    "katex": "^0.10.0"
   },
   "devDependencies": {
     "markdown-it": "^8.4.1",
