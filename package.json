@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:neilsustc/markdown-it-katex.git"
+    "url": "git+ssh://git@github.com:yzhang-gh/markdown-it-katex.git"
   },
   "keywords": [
     "markdown",
@@ -19,7 +19,7 @@
     "markdown-it-plugin",
     "markdown-it"
   ],
-  "author": "Yu Zhang @neilsustc",
+  "author": "Yu Zhang @yzhang-gh",
   "license": "MIT",
   "dependencies": {
     "katex": "^0.10.0"

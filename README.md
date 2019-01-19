@@ -1,6 +1,6 @@
 Forked from [waylonflinn/markdown-it-katex](https://github.com/waylonflinn/markdown-it-katex)
 
-[![Build Status](https://img.shields.io/travis-ci/neilsustc/markdown-it-katex.svg?style=flat-square)](https://travis-ci.org/neilsustc/markdown-it-katex)
+[![Build Status](https://img.shields.io/travis-ci/yzhang-gh/markdown-it-katex.svg?style=flat-square)](https://travis-ci.org/yzhang-gh/markdown-it-katex)
 
 ---
 
