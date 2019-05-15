@@ -1,6 +1,6 @@
 {
   "name": "@neilsustc/markdown-it-katex",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Fast math support for markdown-it with KaTeX",
   "main": "index.js",
   "scripts": {
@@ -22,11 +22,11 @@
   "author": "Yu Zhang @yzhang-gh",
   "license": "MIT",
   "dependencies": {
-    "katex": "^0.10.0"
+    "katex": "^0.10.2"
   },
   "devDependencies": {
-    "markdown-it": "^8.4.1",
-    "markdown-it-testgen": "^0.1.4",
+    "markdown-it": "^8.4.2",
+    "markdown-it-testgen": "^0.1.5",
     "tape": "^4.9.1"
   }
 }
