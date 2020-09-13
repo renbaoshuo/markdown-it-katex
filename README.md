@@ -1,6 +1,7 @@
 Forked from [waylonflinn/markdown-it-katex](https://github.com/waylonflinn/markdown-it-katex)
 
----
+<details>
+<summary>Original `README`</summary>
 
 # markdown-it-katex
 
@@ -22,14 +23,14 @@ npm install markdown-it
 Install the plugin
 
 ```
-npm install @neilsustc/markdown-it-katex
+npm install @yzhang-gh/markdown-it-katex
 ```
 
 Use it in your javascript
 
 ```javascript
 var md = require('markdown-it')(),
-    mk = require('@neilsustc/markdown-it-katex');
+    mk = require('@yzhang-gh/markdown-it-katex');
 
 md.use(mk);
 
@@ -94,3 +95,5 @@ KaTeX is based on TeX and LaTeX. Support for both is growing. Here's a list of
 currently supported functions:
 
 [Function Support in KaTeX](https://github.com/Khan/KaTeX/wiki/Function-Support-in-KaTeX)
+
+</details>

@@ -1,6 +1,6 @@
 {
-  "name": "@neilsustc/markdown-it-katex",
-  "version": "0.6.0",
+  "name": "@yzhang-gh/markdown-it-katex",
+  "version": "0.6.1",
   "description": "Fast math support for markdown-it with KaTeX",
   "main": "index.js",
   "scripts": {
@@ -27,6 +27,9 @@
   "devDependencies": {
     "markdown-it": "^11.0.0",
     "markdown-it-testgen": "^0.1.6",
-    "tape": "^4.9.1"
+    "tape": "^5.0.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
