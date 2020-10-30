@@ -1,7 +1,7 @@
 Forked from [waylonflinn/markdown-it-katex](https://github.com/waylonflinn/markdown-it-katex)
 
 <details>
-<summary>Original `README`</summary>
+<summary>Original <code>README</code></summary>
 
 # markdown-it-katex
 
