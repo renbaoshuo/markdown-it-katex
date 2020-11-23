@@ -1,5 +1,7 @@
 Forked from [waylonflinn/markdown-it-katex](https://github.com/waylonflinn/markdown-it-katex)
 
+Published with the name `@neilsustc/markdown-it-katex`
+
 <details>
 <summary>Original <code>README</code></summary>
 
