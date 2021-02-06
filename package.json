@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "watchify browser.js -o bundle.js -v",
-    "test": "node test/all.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -25,8 +25,8 @@
     "katex": "^0.12.0"
   },
   "devDependencies": {
+    "jest": "^26.6.3",
     "markdown-it": "^11.0.0",
-    "markdown-it-testgen": "^0.1.6",
-    "tape": "^5.0.1"
+    "markdown-it-testgen": "^0.1.6"
   }
 }
