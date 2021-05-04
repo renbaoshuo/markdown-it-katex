@@ -1,6 +1,6 @@
-Forked from [waylonflinn/markdown-it-katex](https://github.com/waylonflinn/markdown-it-katex)
+Forked from [waylonflinn/markdown-it-katex](https://github.com/waylonflinn/markdown-it-katex) to get the latest KaTeX support
 
-Published with the name `@neilsustc/markdown-it-katex`
+Published under `@neilsustc/markdown-it-katex`
 
 <details>
 <summary>Original <code>README</code></summary>
