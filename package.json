@@ -4,8 +4,7 @@
   "description": "Fast math support for markdown-it with KaTeX",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "postinstall": "husky install"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
