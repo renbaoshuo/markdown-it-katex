@@ -1,25 +1,23 @@
-var path = require('path'),
-	testLoad = require('markdown-it-testgen').load,
-	mdk = require('../index');
+const path = require('path');
+const { load } = require('markdown-it-testgen');
+const MarkdownIt = require('markdown-it');
 
-var md = require('markdown-it')()
-	.use(mdk);
-
-/* this uses the markdown-it-testgen module to automatically generate tests
+/* 
+   this uses the markdown-it-testgen module to automatically generate tests
    based on an easy to read text file
  */
-testLoad(path.join(__dirname, 'fixtures/default.txt'), function(data){
-	data.fixtures.forEach(function (fixture){
+load(path.join(__dirname, 'fixtures/default.txt'), (data) => {
+  data.fixtures.forEach((fixture) => {
+    const md = new MarkdownIt();
+    md.use(require('../index'), {
+      skipDelimitersCheck: fixture.header === '`skipDelimitersCheck` option',
+    });
 
-		/* Testing using jest */
-		test(fixture.header, function() {
+    test(fixture.header, function () {
+      var expected = fixture.second.text,
+        actual = md.render(fixture.first.text);
 
-			var expected = fixture.second.text,
-				actual = md.render(fixture.first.text);
-
-			expect(actual).toEqual(expected);
-
-		});
-
-	});
+      expect(actual).toEqual(expected);
+    });
+  });
 });
