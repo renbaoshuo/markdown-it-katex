@@ -1,40 +1,29 @@
-# `@renbaoshuo/markdown-it-katex`
-
-> This package a fork of [`@neilsustc/markdown-it-katex`](https://github.com/yzhang-gh/markdown-it-katex).
+# KaTeX Plugin for MarkdownIt
 
 Add Math to your Markdown.
 
-[KaTeX](https://github.com/Khan/KaTeX) is a faster alternative to MathJax. This plugin makes it easy to support in your markdown.
+> This package a fork of [`@neilsustc/markdown-it-katex`](https://github.com/yzhang-gh/markdown-it-katex).
 
-Need convincing?
-
-- Check out the comparative benchmark: [KaTeX vs MathJax](https://jsperf.com/katex-vs-mathjax/42)
-- Try it in your browser: [markdown-it-katex demo](http://waylonflinn.github.io/markdown-it-katex/)
+[KaTeX](https://github.com/KaTeX/KaTeX) is a faster alternative to MathJax. This plugin makes it easy to support in your markdown.
 
 ## Usage
 
-Install markdown-it
+Install [`markdown-it`](https://github.com/markdown-it/markdown-it) and this plugin:
 
 ```bash
-npm install markdown-it
+npm install markdown-it @renbaoshuo/markdown-it-katex
 ```
 
-Install the plugin
-
-```bash
-npm install @renbaoshuo/markdown-it-katex
-```
-
-Use it in your javascript
+Then use it in your javascript:
 
 ```javascript
-var md = require('markdown-it')(),
-  mk = require('@renbaoshuo/markdown-it-katex');
+const MarkdownIt = require('markdown-it');
 
-md.use(mk);
+const md = new MarkdownIt();
+md.use(require('@renbaoshuo/markdown-it-katex'));
 
 // double backslash is required for javascript strings, but not html input
-var result = md.render('# Math Rulez!\n  $\\sqrt{3x-1}+(1+x)^2$');
+const result = md.render('# Math\n\n$\\sqrt{3x - 1} + (1 + x)^2$\n');
 ```
 
 Include the KaTeX stylesheet in your html:
@@ -42,16 +31,7 @@ Include the KaTeX stylesheet in your html:
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css"
-/>
-```
-
-If you're using the default markdown-it parser, I also recommend the [github stylesheet](https://github.com/sindresorhus/github-markdown-css):
-
-```html
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.1.0/github-markdown.css"
+  href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
 />
 ```
 
@@ -68,7 +48,7 @@ md.use(mk, { throwOnError: false, errorColor: '#cc0000' });
 Surround your LaTeX with a single `$` on each side for inline rendering.
 
 ```markdown
-$d = \gcd(a, b)$
+$\sqrt{3x - 1} + (1 + x)^2$
 ```
 
 ### Block
@@ -98,3 +78,10 @@ If you do not follow the above behavior, pass the `skipDelimitersCheck` option a
 ## Math Syntax Support
 
 KaTeX is based on TeX and LaTeX. Support for both is growing. Here's a list of currently supported functions: [Function Support in KaTeX](https://github.com/Khan/KaTeX/wiki/Function-Support-in-KaTeX).
+
+## Author
+
+**`@renbaoshuo/markdown-it-katex`** © [Baoshuo](https://github.com/renbaoshuo), Released under the [MIT](./LICENSE) License.<br>
+Authored and maintained by Baoshuo with help from [contributors](https://github.com/renbaoshuo/markdown-it-katex/contributors).
+
+> [Personal Website](https://baoshuo.ren) · [Blog](https://blog.baoshuo.ren) · GitHub [@renbaoshuo](https://github.com/renbaoshuo) · Twitter [@renbaoshuo](https://twitter.com/renbaoshuo)
