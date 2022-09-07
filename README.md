@@ -11,7 +11,7 @@ Add Math to your Markdown.
 Install [`markdown-it`](https://github.com/markdown-it/markdown-it) and this plugin:
 
 ```bash
-npm install markdown-it @renbaoshuo/markdown-it-katex
+npm install markdown-it katex @renbaoshuo/markdown-it-katex
 ```
 
 Then use it in your javascript:
